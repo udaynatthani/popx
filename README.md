@@ -1,12 +1,51 @@
-# React + Vite
+# PopX User Registration and Login App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that allows users to:
+- Register with their full name, phone, email, password, and company.
+- Login using registered credentials.
+- View their account settings after successful login.
+- Store and fetch user data using `localStorage`.
+- Automatically generate profile avatars using the user's name.
+- Logout from the account.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 Passwords stored in encoded (Base64) format to avoid plain-text visibility.
+- ✅ User validation on login.
+- 🧠 State management using React hooks.
+- 💾 Persistent storage using browser `localStorage`.
+- 👤 Avatar auto-generation using [UI Avatars](https://ui-avatars.com/).
+- 🚪 Logout functionality.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- React Router
+- Tailwind CSS
+- JavaScript (ES6)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/popx-user-auth.git
+   cd popx-user-auth
+
+
+## Project Structure
+src/
+│
+├── components/
+│   ├── Welcome.jsx          
+│   ├── Register.jsx        
+│   ├── Login.jsx            
+│   └── AccountSettings.jsx  
+│
+├── App.jsx                 
+└── main.jsx                
