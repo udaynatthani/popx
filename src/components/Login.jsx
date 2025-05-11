@@ -32,7 +32,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-between py-10">
       <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">Sign in to your PopX account</h2>
         <p className="text-gray-500 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
@@ -78,6 +78,11 @@ const Login = () => {
           </button>
         </p>
       </div>
+
+      
+      <footer className="text-center text-sm text-gray-500 mt-10 mb-4">
+        Made ❤️ by <a href="https://github.com/udaynatthani" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Uday Natthani</a>
+      </footer>
     </div>
   );
 };
